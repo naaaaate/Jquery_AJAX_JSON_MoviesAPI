@@ -1,3 +1,12 @@
+/*ul,
+li {
+  padding: 0;
+  margin: 0;
+  padding-right: 5em;
+  list-style-type: none;
+  width: 100%;
+}*/
+
 *{
   box-sizing: border-box;
 }
@@ -10,29 +19,14 @@
 
 .main-header {
   align-items: center;
-  justify-content: center;
   background: black;
 }
 
 .main-nav {
-  justify-content: center;
-  text-align: center;
-  padding-right:40px;
-  padding-left:40px;
-
-}
-
-ul,
-li {
-  padding: 0;
-  margin: 0;
-  padding-right: 5em;
-  list-style-type: none;
-  width: 100%;
-}
-
-.main-nav li {
-  /*width: 100%;*/
+  /*justify-content: center;*/
+  /*text-align: center;*/
+  /*padding-right:40px;*/
+  /*padding-left:40px;*/
 
 }
 
@@ -43,13 +37,13 @@ li {
   font-weight: 400;
   text-align: center;
   padding:  1em;
-  border-bottom: 9px solid #ebecec;
   text-decoration: none;
 
 }
 
 .main-nav a:hover {
   color: orange;
+  border-bottom: 1px solid #ebecec;
   border-bottom-color: #52bab3;
 }
 
@@ -60,13 +54,74 @@ a {
 
 .main-content {
   background-color: red;
+  text-align: center;
 }
 
 #movies {
   background: red;
+  text-align: center;
 }
 
+form {
+  background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+margin:auto;
+position:relative;
+width:550px;
+height:450px;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 14px;
+font-style: italic;
+line-height: 24px;
+font-weight: bold;
+/*color: #09C;*/
+text-decoration: none;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:10px;
+border: 1px solid #999;
+border: inset 1px solid #333;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+ /* display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;*/
+  /*display: block;*/
+  /*text-align: center;*/
+}
 
+label {
+  float: left;
+  text-align: right;
+  margin-right: 15px;
+  width: 100px;
+}
+textarea:focus, input:focus {
+  border: 2px solid #900;
+}
+
+input    {
+width:375px;
+display:block;
+border: 1px solid #999;
+height: 25px;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+/*form input{
+  display: inline-block;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  text-align: center;
+}
+*/
 @media (min-width: 769px) {
   .main-nav{
     flex-direction: row;
@@ -79,6 +134,8 @@ a {
     margin: 10px;
     /*-webkit-flex: 1;*/
   }
+
+
 
 
 }
